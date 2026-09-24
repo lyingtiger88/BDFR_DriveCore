@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.5",
+  "Category": "Simulation",
+  "Description": "Configurable Chaos vehicle driving simulation starter project",
+  "Modules": [{"Name":"BDFR_DriveCore","Type":"Runtime","LoadingPhase":"Default"}],
+  "Plugins": [
+    {"Name":"ChaosVehiclesPlugin","Enabled":true},
+    {"Name":"BDFR_UnifiedPhysicsSystem","Enabled":true}
+  ]
+}

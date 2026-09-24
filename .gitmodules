@@ -1,0 +1,4 @@
+[submodule "Plugins/BDFR_UnifiedPhysicsSystem"]
+	path = Plugins/BDFR_UnifiedPhysicsSystem
+	url = https://github.com/lyingtiger88/BDFR_UnifiedPhysicsSystem.git
+	branch = main
