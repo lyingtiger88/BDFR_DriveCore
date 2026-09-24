@@ -4,6 +4,8 @@
 
 **وابستگی فیزیک:** این پروژه افزونهٔ [`BDFR_UnifiedPhysicsSystem`](https://github.com/lyingtiger88/BDFR_UnifiedPhysicsSystem) را در مسیر `Plugins/BDFR_UnifiedPhysicsSystem` به‌عنوان زیرماژول Git مصرف می‌کند. جزئیات به‌روزرسانی و مرز فعلی اتصال در [`Docs/PHYSICS_INTEGRATION.md`](Docs/PHYSICS_INTEGRATION.md) آمده است. نسخهٔ فعلی افزونه هنوز حل‌گر خودرو ندارد؛ شبیه‌سازی خودرو فعلاً از Chaos Vehicles است.
 
+[معماری پروژه](Docs/ARCHITECTURE.md) · [خط‌مشی توسعه](Docs/DEVELOPMENT_POLICY.md) · [راهنمای مشارکت](CONTRIBUTING.md)
+
 > وضعیت تحویل: کد منبع و تنظیمات پروژه آماده است. این بسته **مدل سه‌بعدی، Skeletal Mesh، Physics Asset و نقشهٔ آماده ندارد**؛ برای حرکت خودرو باید آن‌ها را در ادیتور وصل کنید. موتور Unreal در محیط ساخت این بسته موجود نبود و کامپایل یا آزمون رانندگی انجام نشده است. مقدارهای پیش‌فرض نمونه‌اند، نه داده‌های اندازه‌گیری‌شدهٔ یک خودرو.
 
 ## راه‌اندازی
