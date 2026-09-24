@@ -20,7 +20,7 @@
 
 ## Get started
 
-1. Install a C++ capable Unreal Engine 5.5 setup. Later 5.x versions may require API adjustments; compatibility has not been build-verified.
+1. Install a C++ capable Unreal Engine 5.8 setup. This source update addresses the V7 target-upgrade prompt; compilation and gameplay compatibility have not been verified in the editor.
 2. Clone the project with its required plugin:
 
    ```bash
@@ -28,7 +28,7 @@
    cd BDFR_DriveCore
    ```
 
-3. Open `BDFR_DriveCore.uproject` and build the C++ modules.
+3. Open `BDFR_DriveCore.uproject` and build the C++ modules. If upgrading an earlier checkout, regenerate project files and rebuild the project and plugin from source.
 4. Import a vehicle Skeletal Mesh and create its Physics Asset. Use `+X` forward, `+Z` up, centimeters, and wheel bones `wheel_fl`, `wheel_fr`, `wheel_rl`, `wheel_rr`, or edit the names in `WheelSetups`.
 5. Create `BP_AdvancedCar` from `AdvancedVehiclePawn`, assign the mesh and physics asset, confirm the four wheel classes and bone names, then place it above a collidable road in a level. The pawn defaults to Player 0 possession.
 6. Press Play. Use **W/S** for throttle/brake, **A/D** to steer, **Space** for handbrake, **G** for transmission mode, **Q/E** to shift manually, **R** to reset, **C** for camera and **T** for telemetry.
