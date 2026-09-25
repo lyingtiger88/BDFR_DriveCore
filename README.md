@@ -2,7 +2,7 @@
 
 **A configurable Unreal Engine vehicle driving foundation built on Chaos Vehicles.** It is intended to grow alongside [BDFR_UnifiedPhysicsSystem](https://github.com/lyingtiger88/BDFR_UnifiedPhysicsSystem), which is included as a Git submodule.
 
-[راهنمای فارسی / Persian setup guide](README.fa.md) · [Architecture](Docs/ARCHITECTURE.md) · [Development policy](Docs/DEVELOPMENT_POLICY.md) · [Contributing](CONTRIBUTING.md)
+[راهنمای فارسی / Persian setup guide](README.fa.md) · [Vehicle model & import guide (FA)](Docs/VEHICLE_MODEL_SETUP.fa.md) · [Architecture](Docs/ARCHITECTURE.md) · [Development policy](Docs/DEVELOPMENT_POLICY.md) · [Contributing](CONTRIBUTING.md)
 
 > **Current status:** C++ starter project. The source has been checked structurally, but has not been compiled or driven in Unreal Editor. A vehicle Skeletal Mesh, Physics Asset and test level are required before Play. The values in the sample car are starting points, not calibrated measurements of a real vehicle.
 

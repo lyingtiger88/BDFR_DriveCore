@@ -4,13 +4,13 @@
 
 **وابستگی فیزیک:** این پروژه افزونهٔ [`BDFR_UnifiedPhysicsSystem`](https://github.com/lyingtiger88/BDFR_UnifiedPhysicsSystem) را در مسیر `Plugins/BDFR_UnifiedPhysicsSystem` به‌عنوان زیرماژول Git مصرف می‌کند. جزئیات به‌روزرسانی و مرز فعلی اتصال در [`Docs/PHYSICS_INTEGRATION.md`](Docs/PHYSICS_INTEGRATION.md) آمده است. نسخهٔ فعلی افزونه هنوز حل‌گر خودرو ندارد؛ شبیه‌سازی خودرو فعلاً از Chaos Vehicles است.
 
-[معماری پروژه](Docs/ARCHITECTURE.md) · [خط‌مشی توسعه](Docs/DEVELOPMENT_POLICY.md) · [راهنمای مشارکت](CONTRIBUTING.md)
+[راهنمای آماده‌سازی و واردکردن مدل خودرو](Docs/VEHICLE_MODEL_SETUP.fa.md) · [معماری پروژه](Docs/ARCHITECTURE.md) · [خط‌مشی توسعه](Docs/DEVELOPMENT_POLICY.md) · [راهنمای مشارکت](CONTRIBUTING.md)
 
 > وضعیت تحویل: کد منبع و تنظیمات پروژه آماده است. این بسته **مدل سه‌بعدی، Skeletal Mesh، Physics Asset و نقشهٔ آماده ندارد**؛ برای حرکت خودرو باید آن‌ها را در ادیتور وصل کنید. موتور Unreal در محیط ساخت این بسته موجود نبود و کامپایل یا آزمون رانندگی انجام نشده است. مقدارهای پیش‌فرض نمونه‌اند، نه داده‌های اندازه‌گیری‌شدهٔ یک خودرو.
 
 ## راه‌اندازی
 
-1. Unreal Engine 5.8 را با پشتیبانی C++ نصب کنید. اگر قبلاً نسخهٔ قدیمی پروژه را گرفته‌اید، پس از دریافت تغییرات فایل‌های پروژه را دوباره تولید و پروژه و افزونه را از سورس بازسازی کنید. پروژه را با `git clone --recurse-submodules https://github.com/lyingtiger88/BDFR_DriveCore.git` دریافت کنید؛ فایل ZIP نیز نسخهٔ فعلی افزونه را همراه خود دارد. سپس `BDFR_DriveCore.uproject` را باز و در صورت درخواست Build کنید.
+1. Unreal Engine 5.8 را با پشتیبانی C++ نصب کنید. اگر قبلاً نسخهٔ قدیمی پروژه را گرفته‌اید، پس از دریافت تغییرات فایل‌های پروژه را دوباره تولید و پروژه و افزونه را از سورس بازسازی کنید. پروژه را با `git clone --recurse-submodules https://github.com/lyingtiger88/BDFR_DriveCore.git` دریافت کنید؛ فایل ZIP معمول گیت‌هاب محتوای زیرماژول را ندارد؛ برای دریافت کامل افزونه از clone با زیرماژول استفاده کنید. سپس `BDFR_DriveCore.uproject` را باز و در صورت درخواست Build کنید.
 2. یک Skeletal Mesh خودرو وارد کنید که محور طولی‌اش **+X**، بالایش **+Z** و مقیاسش سانتی‌متر باشد. چهار استخوان چرخ با نام‌های `wheel_fl`, `wheel_fr`, `wheel_rl`, `wheel_rr` بگذارید، یا نام‌ها را در `WheelSetups` تغییر دهید. مرکز هر استخوان باید در مرکز همان چرخ باشد.
 3. برای بدنه Physics Asset بسازید. برخورد بدنه باید فعال باشد. شکل‌های بزرگ و نامربوط اطراف چرخ را حذف یا تنظیم کنید تا ردگیری تعلیق با زمین تداخل نکند.
 4. Blueprint جدیدی از `AdvancedVehiclePawn` با نام `BP_AdvancedCar` بسازید؛ Mesh و Physics Asset را روی `Mesh` تعیین کنید. در `Vehicle Movement > Wheel Setups` چهار نام استخوان و کلاس چرخ را بازبینی کنید. ترتیب پیش‌فرض FL, FR, RL, RR است.
